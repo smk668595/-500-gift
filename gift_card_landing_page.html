@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card Landing Page</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #4CAF50, #009688);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .card {
+            position: relative;
+            width: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-text {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* CTA Button */
+        .cta-btn {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff8f7b;
+            transform: translateY(-5px);
+        }
+
+        /* Button Animation */
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="gift-card.jpg" alt="Gift Card">
+            <div class="card-text">
+                <h1>Surprise Your Loved Ones</h1>
+                <p>With our exclusive gift cards</p>
+                <button class="cta-btn">Get Your Gift Card</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
